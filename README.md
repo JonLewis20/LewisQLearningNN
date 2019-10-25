@@ -1,7 +1,28 @@
 # LewisQLearningNN
 
 <h2>Objective</h2>
-The objective of this project is to explore how Q learning can be adapted to help a neural network learn how to play the game of tic tac toe through reinfrocement learning.
+The objective of this project is to explore how Q learning can be adapted to help a neural network learn how to play the game of tic tac toe through reinfrocement learning. I have implimented neural network where it is known if the answer is right or wrong in a single run of the network. I was interested to see how the same concepts could be applied to situations where the right answer cannot be known in the moment and instead relies on a set of moves to determine which moves lead to the right answer. 
+
+DeepMind's AlphaGo was the inspiration for this project idea. Go is a board game with a large play area and 2 players. It is widely viewed as the most difficult game for a computer to play well at due to the seemingly infintensimal set of moves that can be made. DeepMind created their neural network player user reinforcement learning and was the first program to beat a professional go player.
+
+Reinforcement learning networks have wide reaching implications far beyond playing games but a simple game like tic tac toe is the perfect starting point for exploring the concept.
+
+While tic tac toe is a solved game, and extermely simple to learn the right move for any given countermove, it none the less will show the value of reinforcement learning using q learning.
+
+The overarching goals are as follows:
+<ol>
+  <li> Create a simulation program which allows two AI players to play a game of tic tac toe on a configurable size square board</li>
+  <li>Create a player who will pick random moves at each turn</li>
+  <li>Create a player who will use q learning within a neural network to play against the random player</li>
+  <li>Explore how the following parameter effect the win/loss/draw rates
+    <ol>
+      <li>Board Size</li>
+      <li>Number of neural network layers</li>
+      <li>Reward values for win/loss/draw conditions</li>
+     </ol>
+  </li>
+  </ol>
+  Not all combinations of the above will be tested to find the most ideal set of hyper parameters but will instead be essentialy prodded to get a rough idea as to how a shift in a single parameter effects the results
 
 <h3>Background Info</h3>
 In the most basic neural networks, the network takes in a vast set of data and labels and trains based on whether the single run through the network produced the right or wrong answer. An example would be machine learning application where the network tries to determine if theres an apple in a picture. To train the network, you need to provide a large number of pictures which are all labeled as to if an apple is present or not.
@@ -14,13 +35,6 @@ This is where Q learning comes into play. Instead of looking at a single move, y
 
 
 Q = Reward + Discount * Future Reward
-
-
-
-
-
-
-
 
 <h2>Process</h2>
 <ol>
@@ -38,3 +52,13 @@ Q = Reward + Discount * Future Reward
 </ol>
 
 <h2>Results</h2>
+Each trial was conducted with 3001 games played with win/loss/draw percentages reported out for each 300 games. As the neural network player will initially almost always randomly pick a square, we would expect intial sets of games to produce a 1:1 win ratio as would be expected by 2 players picking moves at random. Over time though as the neural network player shifts towards using what its learned, we would expect that win to loss ratio to increase.
+
+<h3>Board Size Test Results</h3>
+
+<h3>Neural Network Layer Test Results</h3>
+
+<h3>Q Learning Reward Parameters  Test Results</h3>
+
+
+
