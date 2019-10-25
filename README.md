@@ -58,29 +58,29 @@ Each trial was conducted with 3001 games played with win/loss/draw percentages r
 3x3:
 <ol>
   <li>First 300 Games</li>
-  X's Won: %   O's Won: %  Draws: %
+  X's Won: 24%%   O's Won: 55.6%  Draws: 20.6%
   <li>Last 300 Games</li>
-  X's Won: %   O's Won: %  Draws: 
+  X's Won: 46.6%   O's Won: 37%  Draws: 16.3%
   <li>Overall Stats</li>  
-  X's Won: %   O's Won: %  Draws: 
+  X's Won: 40.5%   O's Won: 41%  Draws: 18.4%
 </ol>
 4x4:
 <ol>
   <li>First 300 Games</li>
-  X's Won: %   O's Won: %  Draws: %
+  X's Won: 23%   O's Won: 27%  Draws: 50.3%
   <li>Last 300 Games</li>
-  X's Won: %   O's Won: %  Draws: 
+  X's Won: 53.3%   O's Won: 16.6%  Draws: 28%
   <li>Overall Stats</li>  
-  X's Won: %   O's Won: %  Draws: 
+  X's Won: 45.3%   O's Won: 21.3%  Draws: 33.2%
 </ol>
 5x5:
 <ol>
   <li>First 300 Games</li>
-  X's Won: %   O's Won: %  Draws: %
+  X's Won: 17%   O's Won: 22%  Draws: 61.3%
   <li>Last 300 Games</li>
-  X's Won: %   O's Won: %  Draws: 
+  X's Won: 53.6%   O's Won: 13.3%  Draws: 33%
   <li>Overall Stats</li>  
-  X's Won: %   O's Won: %  Draws: 
+  X's Won: 43.8%   O's Won: 16.5%  Draws: %39.6
 </ol>
 
 <h3>Neural Network Layer Test Results</h3>
