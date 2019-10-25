@@ -55,6 +55,33 @@ Q = Reward + Discount * Future Reward
 Each trial was conducted with 3001 games played with win/loss/draw percentages reported out for each 300 games. As the neural network player will initially almost always randomly pick a square, we would expect intial sets of games to produce a 1:1 win ratio as would be expected by 2 players picking moves at random. Over time though as the neural network player shifts towards using what its learned, we would expect that win to loss ratio to increase.
 
 <h3>Board Size Test Results</h3>
+3x3:
+<ol>
+  <li>First 300 Games</li>
+  X's Won: %   O's Won: %  Draws: %
+  <li>Last 300 Games</li>
+  X's Won: %   O's Won: %  Draws: 
+  <li>Overall Stats</li>  
+  X's Won: %   O's Won: %  Draws: 
+</ol>
+4x4:
+<ol>
+  <li>First 300 Games</li>
+  X's Won: %   O's Won: %  Draws: %
+  <li>Last 300 Games</li>
+  X's Won: %   O's Won: %  Draws: 
+  <li>Overall Stats</li>  
+  X's Won: %   O's Won: %  Draws: 
+</ol>
+5x5:
+<ol>
+  <li>First 300 Games</li>
+  X's Won: %   O's Won: %  Draws: %
+  <li>Last 300 Games</li>
+  X's Won: %   O's Won: %  Draws: 
+  <li>Overall Stats</li>  
+  X's Won: %   O's Won: %  Draws: 
+</ol>
 
 <h3>Neural Network Layer Test Results</h3>
 
