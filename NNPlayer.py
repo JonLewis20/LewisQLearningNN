@@ -36,7 +36,7 @@ class NNPlayer:
         #starting off bigger in size than the input layer and
         #tapering down a little in the second layer
         layer1Size = self.inputLayerSize + 6
-        layer2Size = self.inputLayerSize - 4
+        layer2Size = self.inputLayerSize + 4
         
         #Variable to hold the input values
         self.nnInput = tf.placeholder(dtype = tf.float32, shape = [None, self.inputLayerSize])

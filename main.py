@@ -2,9 +2,7 @@
 from TicTacToeBoard import TicTacToeBoard
 from RandomPlayer import RandomPlayer
 from NNPlayer import NNPlayer
-
 import numpy as np
-
 
 if __name__ == '__main__':
 	#Q Learning Hyper-parameters
@@ -13,7 +11,7 @@ if __name__ == '__main__':
 	explorationRate = 1.0
 
 	#Number of games to train on
-	numGames = 1500
+	numGames = 1200
 
 	#Report out stastics of games won/lost/draw after this many games
 	reportingPeriod = 300
