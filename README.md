@@ -22,6 +22,10 @@ The overarching goals are as follows:
   </ol>
   Not all combinations of the above will be tested to find the most ideal set of hyper parameters but will instead be essentialy prodded to get a rough idea as to how a shift in a single parameter effects the results
 
+<h3>How To Run</h3>
+Change directory to Documents/LewisQLearning and enter the following in the terminal
+"python3 main.py"
+
 <h3>Background Info</h3>
 In the most basic neural networks, the network takes in a vast set of data and labels and trains based on whether the single run through the network produced the right or wrong answer. An example would be machine learning application where the network tries to determine if theres an apple in a picture. To train the network, you need to provide a large number of pictures which are all labeled as to if an apple is present or not.
 
