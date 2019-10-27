@@ -35,12 +35,14 @@ if __name__ == '__main__':
 	
 	#Give same space between the intialization text and results
 	print("\n \n \n")
+
+	#Run through the specified number of games
 	for gameNum in range (numGames):
 		#Reset Game Board
 		GameBoard.ResetBoard()
 
 		while True:		    
-		    #X makes move
+		    #O makes move
 		    board = GameBoard.stateBoard
 		    oldStateBoard =  GameBoard.stateBoard
 		    combinedBoard = GameBoard.CompressedBoard()
@@ -50,22 +52,18 @@ if __name__ == '__main__':
 
 		    winner = GameBoard.CheckWinCondition()
 		    draw = GameBoard.CheckDrawCondition()
+
 		    if winner != -1:
-		        #print("We have a winner: Player " + str(winner))
-		        #display("Game # " + str(gameNum))
-		        #display(board)
 		        subsectionWinCounter[winner] += 1
 		        #If the opponent wins, the model needs to train itself on the loss
 		        #Gives the negative of the reward the opponent got
 		        NNAgent.Update(oldStateBoard, newStateBoard, nnRow, nnCol, -reward)
 		        break
 		    elif draw == True:
-		        #Game ended in draw
-		        #print("Game ended in draw")
 		        subsectionDrawCounter += 1
 		        break   
 		    
-		    #O makes move
+		    #X makes move
 		    oldStateBoard =  GameBoard.stateBoard
 		    nnRow, nnCol = NNAgent.GetMove(GameBoard.stateBoard)
 		    reward = GameBoard.MakeMove(nnRow, nnCol, 0)
@@ -75,13 +73,9 @@ if __name__ == '__main__':
 		    winner = GameBoard.CheckWinCondition()
 		    draw = GameBoard.CheckDrawCondition()
 		    if winner != -1:
-		        #print("We have a winner: Player " + str(winner))
-		        #display("Game # " + str(gameNum))
-		        #isplay(board)
 		        subsectionWinCounter[winner] += 1
 		        break
 		    elif draw == True:
-		        #print("Game ended in draw")
 		        subsectionDrawCounter += 1
 		        break   
 		    
