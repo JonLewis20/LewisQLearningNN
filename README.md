@@ -16,9 +16,7 @@ The overarching goals are as follows:
   <li>Create a player who will use q learning within a neural network to play against the random player</li>
   <li>Explore how the following parameter effect the win/loss/draw rates
     <ol>
-      <li>Board Size</li>
-      <li>Number of neural network layers</li>
-      <li>Reward values for win/loss/draw conditions</li>
+      <li>Board Size: 3x3 vs 4x4 vs 5x5</li>
      </ol>
   </li>
   </ol>
@@ -54,38 +52,46 @@ Q = Reward + Discount * Future Reward
 <h2>Results</h2>
 Each trial was conducted with 3001 games played with win/loss/draw percentages reported out for each 300 games. As the neural network player will initially almost always randomly pick a square, we would expect intial sets of games to produce a 1:1 win ratio as would be expected by 2 players picking moves at random. Over time though as the neural network player shifts towards using what its learned, we would expect that win to loss ratio to increase.
 
+<h3>Parameters</h3>
+Each set of trials uses the following hyper parameters as the base setting. Changes to these base settings are noted in each set of tests
+<ol>
+  <li>Win Reward: 10</li>
+  <li>Loss Reward: -10</li>
+  <li>Draw Reward: 1</li>
+  <li>Board Size: 3x3</li>
+  <li>Q Learning Rate: .1</li>
+  <li>Q Learning Discount: .9</li>
+  <li>Q Learning Exploration Rate: 1.0</li>
+</ol>
+
 <h3>Board Size Test Results</h3>
 3x3:
 <ol>
   <li>First 300 Games</li>
-  X's Won: 24%%   O's Won: 55.6%  Draws: 20.6%
+  X's Won: 25%   O's Won: 51%  Draws: 24.33%
   <li>Last 300 Games</li>
-  X's Won: 46.6%   O's Won: 37%  Draws: 16.3%
+  X's Won: 46%   O's Won: 32%  Draws: 22%
   <li>Overall Stats</li>  
-  X's Won: 40.5%   O's Won: 41%  Draws: 18.4%
+  X's Won: 42.89%   O's Won: 38.42%  Draws: 18.69%
 </ol>
 4x4:
 <ol>
   <li>First 300 Games</li>
-  X's Won: 23%   O's Won: 27%  Draws: 50.3%
+  X's Won: 28%   O's Won: 28%  Draws: 44%
   <li>Last 300 Games</li>
-  X's Won: 53.3%   O's Won: 16.6%  Draws: 28%
+  X's Won: 48.33%   O's Won: 22.33%  Draws: 29.33%
   <li>Overall Stats</li>  
-  X's Won: 45.3%   O's Won: 21.3%  Draws: 33.2%
+  X's Won: 45.92%   O's Won: 22.59%  Draws: 31.49%
 </ol>
 5x5:
 <ol>
   <li>First 300 Games</li>
-  X's Won: 17%   O's Won: 22%  Draws: 61.3%
+  X's Won: 21%   O's Won: 21.67%  Draws: 57.67%
   <li>Last 300 Games</li>
-  X's Won: 53.6%   O's Won: 13.3%  Draws: 33%
+  X's Won: 47.33%   O's Won: 15.67%  Draws: 37%
   <li>Overall Stats</li>  
-  X's Won: 43.8%   O's Won: 16.5%  Draws: %39.6
+  X's Won: 39.49%   O's Won: 17.53%  Draws: 42.99%
 </ol>
-
-<h3>Neural Network Layer Test Results</h3>
-
-<h3>Q Learning Reward Parameters  Test Results</h3>
 
 
 
