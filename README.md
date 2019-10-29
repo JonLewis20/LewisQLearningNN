@@ -23,6 +23,10 @@ The overarching goals are as follows:
   </li>
   </ol>
 
+The code provided will show training of the neural network player over the course of 1200 games on a 4x4 board. This is less games than used in the test section but is trimmed down to get under the 2 minute runtime limit for the demonstration. A 4x4 board was chosen to show a more dramatic shift in win rate for the neural network player in order to show that the network is learning. It seemed that the neural network player did better the bigger the game board was.
+
+The program will display win stats for every 300 games played so that you will get a sense of it getting better over time. It will end with a summary of all games played.
+
 <h3>How To Run</h3>
 Open a terminal, change directory to Documents/LewisQLearning and enter the following without the quotations:
 "python3 main.py"
