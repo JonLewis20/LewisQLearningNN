@@ -1,6 +1,6 @@
 import numpy as np
 import random
-import tensorflow as tf
+
 class TicTacToeBoard:
     def __init__(self, boardHeightWidth):
         #Hyper-parameters to be used with the neural network agent
