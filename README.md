@@ -25,7 +25,7 @@ The overarching goals are as follows:
 
 The code provided will show training of the neural network player over the course of 1200 games on a 4x4 board. This is less games than used in the test section but is trimmed down to get under the 2 minute runtime limit for the demonstration. A 4x4 board was chosen to show a more dramatic shift in win rate for the neural network player in order to show that the network is learning. It seemed that the neural network player did better the bigger the game board was.
 
-The program will display win stats for every 300 games played so that you will get a sense of it getting better over time. It will end with a summary of all games played.
+The program will display win stats for every 300 games played so that you will get a sense of it getting better over time. It will end with a summary of all games played. The neural network player is X's and the random player is O's.
 
 <h3>How To Run</h3>
 Open a terminal, change directory to Documents/LewisQLearning and enter the following without the quotations:
@@ -57,6 +57,8 @@ This is where Q learning comes into play. Instead of looking at a single move, y
 
 <h2>Results</h2>
 Each trial was conducted with 3001 games played with win/loss/draw percentages reported out for each 300 games. As the neural network player will initially almost always randomly pick a square, we would expect intial sets of games to produce a 1:1 win ratio as would be expected by 2 players picking moves at random. Over time though as the neural network player shifts towards using what its learned, we would expect that win to loss ratio to increase.
+
+For the purpose of these tests, the neural network player picked X's and the random player picked O's. O's go first however (Not exactly tic tac toe canon as you know it but does not effect how the game is played and won assuming you put aside the solved nature of the game).
 
 <h3>Parameters</h3>
 Each set of trials uses the following hyper parameters as the base setting. Changes to these base settings are noted in each set of tests
